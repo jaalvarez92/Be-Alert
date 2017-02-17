@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.jalvarez.bealert.dummy.DummyContent;
+import com.jalvarez.bealert.data.dummy.DummyContent;
 
 /**
  * A fragment representing a single Earthquake detail screen.

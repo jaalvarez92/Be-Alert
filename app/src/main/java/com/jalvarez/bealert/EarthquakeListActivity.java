@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.jalvarez.bealert.dummy.DummyContent;
+import com.jalvarez.bealert.data.dummy.DummyContent;
 
 import java.util.List;
 

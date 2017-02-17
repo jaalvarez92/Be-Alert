@@ -1,4 +1,4 @@
-package com.jalvarez.bealert.dummy;
+package com.jalvarez.bealert.data.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;
