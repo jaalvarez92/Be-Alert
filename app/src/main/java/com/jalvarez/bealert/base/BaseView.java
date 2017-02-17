@@ -10,8 +10,8 @@ package com.jalvarez.bealert.base;
  * San Jose, Costa Rica
  */
 
-public interface BaseView {
+public interface BaseView<T> {
 
-
+    void setPresenter(T presenter);
 
 }

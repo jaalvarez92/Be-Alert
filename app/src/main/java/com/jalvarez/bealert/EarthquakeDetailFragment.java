@@ -1,20 +1,18 @@
 package com.jalvarez.bealert;
 
-import android.app.Activity;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.jalvarez.bealert.data.dummy.DummyContent;
+import com.jalvarez.bealert.functionalities.showearthquakes.ShowEarthquakesActivity;
 
 /**
  * A fragment representing a single Earthquake detail screen.
- * This fragment is either contained in a {@link EarthquakeListActivity}
- * in two-pane mode (on tablets) or a {@link EarthquakeDetailActivity}
+ * This fragment is either contained in a {@link ShowEarthquakesActivity}
+ * in two-pane mode (on tablets) or a {@link ShowEarthquakeDetailActivity}
  * on handsets.
  */
 public class EarthquakeDetailFragment extends Fragment {
@@ -40,29 +38,24 @@ public class EarthquakeDetailFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (getArguments().containsKey(ARG_ITEM_ID)) {
-            // Load the dummy content specified by the fragment
-            // arguments. In a real-world scenario, use a Loader
-            // to load content from a content provider.
-            mItem = DummyContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
-
-            Activity activity = this.getActivity();
-            CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
-            if (appBarLayout != null) {
-                appBarLayout.setTitle(mItem.content);
-            }
-        }
+//        if (getArguments().containsKey(ARG_ITEM_ID)) {
+//            // Load the dummy content specified by the fragment
+//            // arguments. In a real-world scenario, use a Loader
+//            // to load content from a content provider.
+//            mItem = DummyContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+//
+//        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.earthquake_detail, container, false);
+        View rootView = inflater.inflate(R.layout.fargment_show_earthquake_detail, container, false);
 
-        // Show the dummy content as text in a TextView.
-        if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.earthquake_detail)).setText(mItem.details);
-        }
+//        // Show the dummy content as text in a TextView.
+//        if (mItem != null) {
+//            ((TextView) rootView.findViewById(R.id.earthquake_detail)).setText(mItem.details);
+//        }
 
         return rootView;
     }
