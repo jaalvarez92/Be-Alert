@@ -22,7 +22,7 @@ public class SelectDatesToShowActivity extends AppCompatActivity {
         SelectDatesToShowFragment view = SelectDatesToShowFragment.newInstance();
         SelectDatesToShowPresenter presenter = new SelectDatesToShowPresenter(view);
         view.setPresenter(presenter);
-        ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), view, R.id.container);
+        ActivityUtils.replaceFragmentInActivity(getSupportFragmentManager(), view, R.id.container);
     }
     // endregion
 }
